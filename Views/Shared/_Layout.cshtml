@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Phu Gia Tran">
+        <meta name="description" content="HIT401">
+        <meta name="keywords" content="HIT401">
+        <meta name="theme-color" content="#222">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Widgets/widgets.css">
+        <link rel="icon" href="~/favicon.ico" />
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/5b5b998146.js"></script>
+        <script src="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Cesium.js"></script>
+        <title>@ViewBag.Title | HIT401</title>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <partial name="Partials/_Sidenav" />
+            </aside>
+            @RenderBody()
+        </main>
+        @RenderSection("Scripts", false)
+        <script type="text/javascript" src="~/js/main.js"></script>
+        <script type="text/javascript" src="~/js/cesium.js"></script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+﻿* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body, 
+main {
+    height: 100%;
+}
+
+main {
+    display: flex;
+}
+
+span {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #16e976;
+    text-decoration: none;
+}
+
+i {
+    text-align: center;
+    width: 30px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+aside {
+    background: #09102b;
+    box-shadow: 3px 7px 15px 0 #222;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    letter-spacing: 0.02rem;
+    width: 315px;
+}
+
+aside h3 {
+    border-bottom: 1px solid #444;
+    color: #c7f2ff;
+    font-size: 9px;
+    padding: 10px 0 15px 0;
+}
+
+aside span {
+    color: #16e976;
+    position: relative;
+}
+
+.list-main {
+    padding: 5px;
+}
+
+.list-item a {
+    display: block;
+}
+
+.sidenav-card {
+    padding: 10px 16px;
+}
+
+.sidenav-card .card-main span {
+    border-radius: 3px;
+    display: block;
+    margin: 8px 0;
+    padding: 10px 4px;
+}
+
+.card-main span:hover {
+    background: #e0f3ff42;
+}
+
+.card-item p,
+.card-item i {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.card-item span #expandable {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.card-footer {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.toggler {
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    width: 40px;
+}
+
+.toggler:hover {
+    background: #e0f3ff42;
+}
+
+.toggler span {
+    display: block;
+    padding: 11px 4px;
+}
+
+.drop-menu {
+    background: #222;
+    border-radius: 3px;
+    display: none;
+    position: relative;
+}
+
+.drop-menu a {
+    border-radius: 2px;
+    display: block;
+    padding: 10px 4px;
+}
+
+.drop-menu a:hover {
+    background: #e0f3ff42;
+}
+
+.link {
+    border-radius: 3px;
+    display: block;
+    margin: 13px 0;
+    padding: 10px 4px;
+}
+
+.link:hover {
+    background: #e0f3ff42;
+}
+
+.active {
+    color: #64f30c;
+}
+
+#cesiumContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin: 25px;
+    width: 100%;
+}
+
+.container p {
+    color: #222;
+}
+
+@media screen and (max-width: 425px) {
+    .sidenav-card {
+        padding: 10px 5px;
+    }
+}
